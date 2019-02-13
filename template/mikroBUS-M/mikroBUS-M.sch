@@ -1,0 +1,133 @@
+EESchema Schematic File Version 4
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L mikroBUS:MIKROBUS_MODULE_CONN CON101
+U 1 1 5C620177
+P 1825 2600
+F 0 "CON101" H 2375 4367 50  0000 C CNN
+F 1 "MIKROBUS_MODULE_CONN" H 2375 4276 50  0000 C CNN
+F 2 "mikroBUS:MIKROBUS_MODULE_CONN" H 1925 2600 50  0001 L BNN
+F 3 "" H 1825 2600 50  0001 C CNN
+	1    1825 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0101
+U 1 1 5C620331
+P 1550 2775
+F 0 "#PWR0101" H 1550 2525 50  0001 C CNN
+F 1 "GND" H 1555 2602 50  0000 C CNN
+F 2 "" H 1550 2775 50  0001 C CNN
+F 3 "" H 1550 2775 50  0001 C CNN
+	1    1550 2775
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1550 2775 1550 2725
+Wire Wire Line
+	1550 2500 1625 2500
+Wire Wire Line
+	1550 2725 3125 2725
+Wire Wire Line
+	3125 2725 3125 2500
+Connection ~ 1550 2725
+Wire Wire Line
+	1550 2725 1550 2500
+$Comp
+L power:+5V #PWR0102
+U 1 1 5C620409
+P 3650 2125
+F 0 "#PWR0102" H 3650 1975 50  0001 C CNN
+F 1 "+5V" H 3665 2298 50  0000 C CNN
+F 2 "" H 3650 2125 50  0001 C CNN
+F 3 "" H 3650 2125 50  0001 C CNN
+	1    3650 2125
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR0103
+U 1 1 5C62048F
+P 1100 2225
+F 0 "#PWR0103" H 1100 2075 50  0001 C CNN
+F 1 "+3.3V" H 1115 2398 50  0000 C CNN
+F 2 "" H 1100 2225 50  0001 C CNN
+F 3 "" H 1100 2225 50  0001 C CNN
+	1    1100 2225
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1100 2225 1100 2300
+Wire Wire Line
+	1100 2300 1625 2300
+Wire Wire Line
+	3650 2125 3650 2300
+Wire Wire Line
+	3650 2300 3125 2300
+Entry Wire Line
+	3250 1500 3350 1600
+Entry Wire Line
+	3250 1700 3350 1800
+Wire Bus Line
+	3350 1600 3350 1800
+Wire Bus Line
+	3350 1800 5425 1800
+Wire Wire Line
+	3125 1500 3250 1500
+Wire Wire Line
+	3125 1700 3250 1700
+Entry Wire Line
+	3250 1900 3350 2000
+Entry Wire Line
+	3250 2100 3350 2200
+Wire Wire Line
+	3125 1900 3250 1900
+Wire Wire Line
+	3125 2100 3250 2100
+Wire Bus Line
+	3350 2000 3350 2200
+Wire Bus Line
+	3350 2200 5425 2200
+Entry Wire Line
+	1425 1400 1525 1500
+Entry Wire Line
+	1425 1600 1525 1700
+Entry Wire Line
+	1425 1800 1525 1900
+Entry Wire Line
+	1425 2000 1525 2100
+Wire Wire Line
+	1525 2100 1625 2100
+Wire Wire Line
+	1525 1900 1625 1900
+Wire Wire Line
+	1525 1700 1625 1700
+Wire Wire Line
+	1525 1500 1625 1500
+Wire Bus Line
+	1425 725  3950 725 
+Wire Bus Line
+	3950 725  3950 1575
+Wire Bus Line
+	3950 1575 5400 1575
+Text Label 4675 1575 0    50   ~ 0
+SPI
+Text Label 4675 1800 0    50   ~ 0
+UART
+Text Label 4700 2200 0    50   ~ 0
+I2C
+Wire Bus Line
+	1425 725  1425 2000
+$EndSCHEMATC

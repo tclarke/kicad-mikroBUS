@@ -1,0 +1,13 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP MIKROBUS_HOST_CONN
+D MikroClick connector
+K mikrobus
+$ENDCMP
+#
+$CMP MIKROBUS_MODULE_CONN
+D MikroBUS module connector
+K mikrobus
+$ENDCMP
+#
+#End Doc Library
